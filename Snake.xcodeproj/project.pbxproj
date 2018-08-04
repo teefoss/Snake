@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		303969B72113653300348D25 /* event.c in Sources */ = {isa = PBXBuildFile; fileRef = 303969B62113653300348D25 /* event.c */; };
 		30525CE0210BF86500ADEDA1 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 30525CDF210BF86500ADEDA1 /* main.c */; };
+		30525CF0210BFC3400ADEDA1 /* tffunctions.c in Sources */ = {isa = PBXBuildFile; fileRef = 30525CED210BFC3400ADEDA1 /* tffunctions.c */; };
+		30525CF1210BFC3400ADEDA1 /* sdl.c in Sources */ = {isa = PBXBuildFile; fileRef = 30525CEE210BFC3400ADEDA1 /* sdl.c */; };
+		30525D0F210CA49100ADEDA1 /* SDL2_image.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30525D0C210CA49100ADEDA1 /* SDL2_image.framework */; };
+		30525D10210CA49100ADEDA1 /* SDL2_ttf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30525D0D210CA49100ADEDA1 /* SDL2_ttf.framework */; };
+		30525D11210CA49100ADEDA1 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30525D0E210CA49100ADEDA1 /* SDL2.framework */; };
+		30525D14210CAE5900ADEDA1 /* game.c in Sources */ = {isa = PBXBuildFile; fileRef = 30525D13210CAE5900ADEDA1 /* game.c */; };
+		30525D17210CAFB700ADEDA1 /* gamemain.c in Sources */ = {isa = PBXBuildFile; fileRef = 30525D16210CAFB700ADEDA1 /* gamemain.c */; };
+		30525D2E210D03F100ADEDA1 /* SDL2_mixer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30525D2D210D03F100ADEDA1 /* SDL2_mixer.framework */; };
+		3071603B210F301D00ABB404 /* display.c in Sources */ = {isa = PBXBuildFile; fileRef = 3071603A210F301D00ABB404 /* display.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +33,37 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		303969B62113653300348D25 /* event.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = event.c; sourceTree = "<group>"; };
+		303EB8F82115389200F784B9 /* event.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = event.h; sourceTree = "<group>"; };
+		304F847A2113A50500737746 /* snake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snake.png; sourceTree = "<group>"; };
+		304F847B2113A50500737746 /* snakedead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snakedead.png; sourceTree = "<group>"; };
+		304F847C2113B45000737746 /* teleport.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = teleport.wav; sourceTree = "<group>"; };
+		3051ABC221121132009DA0FB /* portal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portal.png; sourceTree = "<group>"; };
+		3051ABC4211219E8009DA0FB /* portal1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = portal1.png; sourceTree = "<group>"; };
 		30525CDC210BF86500ADEDA1 /* Snake */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Snake; sourceTree = BUILT_PRODUCTS_DIR; };
 		30525CDF210BF86500ADEDA1 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		30525CE7210BFC1200ADEDA1 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = "<group>"; };
+		30525CEA210BFC1200ADEDA1 /* block.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = block.png; sourceTree = "<group>"; };
+		30525CEB210BFC3400ADEDA1 /* tffunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tffunctions.h; sourceTree = "<group>"; };
+		30525CED210BFC3400ADEDA1 /* tffunctions.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = tffunctions.c; sourceTree = "<group>"; };
+		30525CEE210BFC3400ADEDA1 /* sdl.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = sdl.c; sourceTree = "<group>"; };
+		30525CEF210BFC3400ADEDA1 /* sdl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sdl.h; sourceTree = "<group>"; };
+		30525D0C210CA49100ADEDA1 /* SDL2_image.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_image.framework; path = ../../../../../Library/Frameworks/SDL2_image.framework; sourceTree = "<group>"; };
+		30525D0D210CA49100ADEDA1 /* SDL2_ttf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_ttf.framework; path = ../../../../../Library/Frameworks/SDL2_ttf.framework; sourceTree = "<group>"; };
+		30525D0E210CA49100ADEDA1 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
+		30525D12210CAE5900ADEDA1 /* game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
+		30525D13210CAE5900ADEDA1 /* game.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = game.c; sourceTree = "<group>"; };
+		30525D15210CAFB700ADEDA1 /* gamemain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gamemain.h; sourceTree = "<group>"; };
+		30525D16210CAFB700ADEDA1 /* gamemain.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = gamemain.c; sourceTree = "<group>"; };
+		30525D2C210D003500ADEDA1 /* pickup.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pickup.wav; sourceTree = "<group>"; };
+		30525D2D210D03F100ADEDA1 /* SDL2_mixer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2_mixer.framework; path = ../../../../../Library/Frameworks/SDL2_mixer.framework; sourceTree = "<group>"; };
+		30525D2F210D193100ADEDA1 /* dead.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = dead.wav; sourceTree = "<group>"; };
+		30716038210EC0A200ABB404 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		30716039210F301D00ABB404 /* display.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = display.h; sourceTree = "<group>"; };
+		3071603A210F301D00ABB404 /* display.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = display.c; sourceTree = "<group>"; };
+		3071603C210F3DC400ABB404 /* Px437_IBM_VGA9.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Px437_IBM_VGA9.ttf; sourceTree = "<group>"; };
+		309D4C3A210FD5BC001C3039 /* disappear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = disappear.wav; sourceTree = "<group>"; };
+		309D4C3C210FDDC8001C3039 /* energy.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = energy.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +71,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30525D2E210D03F100ADEDA1 /* SDL2_mixer.framework in Frameworks */,
+				30525D0F210CA49100ADEDA1 /* SDL2_image.framework in Frameworks */,
+				30525D10210CA49100ADEDA1 /* SDL2_ttf.framework in Frameworks */,
+				30525D11210CA49100ADEDA1 /* SDL2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,7 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				30525CDE210BF86500ADEDA1 /* Snake */,
+				30525CE6210BF86A00ADEDA1 /* Assetts */,
 				30525CDD210BF86500ADEDA1 /* Products */,
+				30525D0B210CA49000ADEDA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +102,52 @@
 		30525CDE210BF86500ADEDA1 /* Snake */ = {
 			isa = PBXGroup;
 			children = (
+				30716039210F301D00ABB404 /* display.h */,
+				3071603A210F301D00ABB404 /* display.c */,
+				303EB8F82115389200F784B9 /* event.h */,
+				303969B62113653300348D25 /* event.c */,
+				30525D12210CAE5900ADEDA1 /* game.h */,
+				30525D13210CAE5900ADEDA1 /* game.c */,
+				30525D15210CAFB700ADEDA1 /* gamemain.h */,
+				30525D16210CAFB700ADEDA1 /* gamemain.c */,
 				30525CDF210BF86500ADEDA1 /* main.c */,
+				30525CEF210BFC3400ADEDA1 /* sdl.h */,
+				30525CEE210BFC3400ADEDA1 /* sdl.c */,
+				30525CEB210BFC3400ADEDA1 /* tffunctions.h */,
+				30525CED210BFC3400ADEDA1 /* tffunctions.c */,
 			);
 			path = Snake;
+			sourceTree = "<group>";
+		};
+		30525CE6210BF86A00ADEDA1 /* Assetts */ = {
+			isa = PBXGroup;
+			children = (
+				30525CE7210BFC1200ADEDA1 /* apple.png */,
+				30525CEA210BFC1200ADEDA1 /* block.png */,
+				30525D2C210D003500ADEDA1 /* pickup.wav */,
+				30525D2F210D193100ADEDA1 /* dead.wav */,
+				30716038210EC0A200ABB404 /* win.wav */,
+				309D4C3A210FD5BC001C3039 /* disappear.wav */,
+				309D4C3C210FDDC8001C3039 /* energy.wav */,
+				304F847C2113B45000737746 /* teleport.wav */,
+				3051ABC221121132009DA0FB /* portal.png */,
+				3051ABC4211219E8009DA0FB /* portal1.png */,
+				3071603C210F3DC400ABB404 /* Px437_IBM_VGA9.ttf */,
+				304F847A2113A50500737746 /* snake.png */,
+				304F847B2113A50500737746 /* snakedead.png */,
+			);
+			path = Assetts;
+			sourceTree = "<group>";
+		};
+		30525D0B210CA49000ADEDA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				30525D2D210D03F100ADEDA1 /* SDL2_mixer.framework */,
+				30525D0C210CA49100ADEDA1 /* SDL2_image.framework */,
+				30525D0D210CA49100ADEDA1 /* SDL2_ttf.framework */,
+				30525D0E210CA49100ADEDA1 /* SDL2.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,7 +206,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30525CF1210BFC3400ADEDA1 /* sdl.c in Sources */,
+				30525D14210CAE5900ADEDA1 /* game.c in Sources */,
+				303969B72113653300348D25 /* event.c in Sources */,
+				30525D17210CAFB700ADEDA1 /* gamemain.c in Sources */,
 				30525CE0210BF86500ADEDA1 /* main.c in Sources */,
+				3071603B210F301D00ABB404 /* display.c in Sources */,
+				30525CF0210BFC3400ADEDA1 /* tffunctions.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,6 +335,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D54ZHB8K4R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -250,6 +348,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D54ZHB8K4R;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

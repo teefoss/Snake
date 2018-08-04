@@ -7,9 +7,15 @@
 //
 
 #include <stdio.h>
+#include "sdl.h"
+#include "gamemain.h"
 
-int main(int argc, const char * argv[]) {
-	// insert code here...
-	printf("Hello, World!\n");
+int main(int argc, const char * argv[])
+{
+	StartSDL();
+	
+	GameMain();
+	
+	StopSDL();
 	return 0;
 }
